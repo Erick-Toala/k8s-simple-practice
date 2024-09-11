@@ -1,0 +1,15 @@
+{
+  "name": "microservice-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api-server.js",
+  "scripts": {
+    "start": "node api-server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.20.0"
+  }
+}

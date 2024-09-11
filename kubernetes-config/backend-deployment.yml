@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: microservice-backend
+  template:
+    metadata:
+      labels:
+        app: microservice-backend
+    spec:
+      containers:
+      - name: microservice-backend
+        image: microservice-backend:local
+        ports:
+        - containerPort: 6000
